@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<yml_catalog date="2018-07-17 12:10">
+  <shop>
+    <name>Онлайн школа по программированию и изучения языков</name>
+    <company>Школа Сэмпл.Курсы</company>
+    <url>https://courses.sample.s3.yandex.net</url>
+    <email>support-courses@courses.sample.s3.yandex.net</email>
+    <currencies>
+      <currency id="RUR" rate="1" />
+    </currencies>
+    <!--Наборы курсов, на которые будет ссылка в описании курса-->
+    <sets>
+      <set id="s2">
+        <name>Курсы для разработчиков</name>
+        <url>https://courses.sample.s3.yandex.net/list/Development</url>
+      </set>
+      <set id="s3">
+        <name>Курсы по Питону</name>
+        <url>https://courses.sample.s3.yandex.net/list/Python</url>
+      </set>
+      <set id="s4">
+        <name>Курсы для фронтенд разработчиков</name>
+        <url>https://courses.sample.s3.yandex.net/list/Frontend</url>
+      </set>
+      <set id="s5">
+        <name>Курсы по Английскому языку</name>
+        <url>https://courses.sample.s3.yandex.net/list/english</url>
+      </set>
+    </sets>
+    <offers>
+      <offer id="123456python">
+        <name>Питон для начинающих</name>
+        <url>https://courses.sample.s3.yandex.net/courses/python-beginners</url>
+        <categoryId>104</categoryId><!--Обязательная ссылка на категорию. Можно указать до 2х значений категории-->
+        <set-ids>s2,s3</set-ids><!--Можно указать несколько наборов через запятую-->
+        <!--Общая цена курса-->
+        <price>10000</price>
+        <currencyId>RUR</currencyId>
+        <param name="Цена по скидке">7000</param>
+        <param name="Дата окончания скидки">2022-06-20</param>
+        <param name="Цена за подписку">true</param><!--Если курс доступен в рамках подписки и общая цена это цена за подписку-->
+        <param name="Оплата в рассрочку" unit="месяц">16</param><!--Рассрочка общей цены на период. Возможные значения для unit - месяц, день-->
+        <!--Цена за месяц-->
+        <param name="Ежемесячная цена">1000</param>
+        <param name="Ежемесячная цена по скидке">500</param>
+        <param name="Дата окончания ежемесячной скидки">2021-08-20</param>
+        <!--Сроки курсов-->
+        <param name="Ближайшая дата">2021-08-01</param>
+        <param name="Продолжительность" unit="месяц">8</param>
+        <!--Программа обучения-->
+        <param name="План" unit="Введение">Работа с редактором кода. Первая программа. Работу с функцией print.</param>
+        <param name="План" unit="Операторы, выражения">Арифметические операции с числами, порядок их выполнения, ввод чисел с клавиатуры, деление нацело и с остатком, а также сокращённые операторы.</param>
+        <!--Формат и методы обучения-->
+        <param name="Формат обучения">В группе c наставником</param><!--Возможные значения - "Самостоятельно", "Самостоятельно с наставником", "В группе c наставником", "С преподавателем"-->
+        <param name="Есть вебинары">true</param>
+        <param name="Есть домашние работы">true</param>
+        <param name="Есть видеоуроки">true</param>
+        <param name="Есть текстовые уроки">true</param>
+        <param name="Есть тренажеры">true</param>
+        <param name="Есть сообщество">true</param>
+        <!--Параметры курса-->
+        <param name="Сложность">Для новичков</param><!--Возможные значения - "Для новичков" или "Для опытных"-->
+        <param name="Тип обучения">Курс</param><!--Возможные значения - "Курс" или "Профессия"-->
+        <param name="Есть бесплатная часть">true</param>
+        <param name="С трудоустройством">true</param>
+        <param name="Результат обучения">Сертификат</param><!--Возможные значения - "Сертификат", "Диплом", "Удостоверение"-->
+        <param name="Часы в неделю">5</param>
+        <!--Описание курса-->
+        <picture>https://avatars.mds.yandex.net/get-lpc/1674605/c1dc5b56-67ba-4a57-8703-58f1723ea1ea/width_360x2</picture>
+        <description>Лучший курс про Питон</description>
+      </offer>
+      <offer id="4321English">
+        <name>Английский для получения IELTS</name>
+        <url>https://courses.sample.s3.yandex.net/courses/ielts</url>
+        <categoryId>20001</categoryId><!--Обязательная ссылка на категорию. Можно указать до 2х значений категории-->
+        <set-ids>s5</set-ids><!--Можно указать несколько наборов через запятую-->
+        <!--Общая цена курса-->
+        <price>30000</price>
+        <currencyId>RUR</currencyId>
+        <param name="Цена по скидке">25000</param>
+        <param name="Дата окончания скидки">2022-07-23</param>
+        <!--Сроки курсов-->
+        <param name="Продолжительность" unit="месяц">5</param>
+        <!--Программа обучения-->
+        <param name="План" unit="Вводный модуль">Как устроен курс</param>
+        <param name="План" unit="Модуль 1">Формат эксзамена и критерии оценивания</param>
+        <!--Формат и методы обучения-->
+        <param name="Формат обучения">В группе c наставником</param><!--Возможные значения - "Самостоятельно", "Самостоятельно с наставником", "В группе c наставником", "С преподавателем"-->
+        <param name="Есть вебинары">true</param>
+        <param name="Есть домашние работы">true</param>
+        <param name="Есть видеоуроки">true</param>
+        <param name="Есть тренажеры">true</param>
+        <!--Параметры курса-->
+        <param name="Сложность">Для опытных</param><!--Возможные значения - "Для новичков" или "Для опытных"-->
+        <param name="Тип обучения">Курс</param><!--Возможные значения - "Курс" или "Профессия"-->
+        <param name="Результат обучения">Диплом</param><!--Возможные значения - "Сертификат", "Диплом", "Удостоверение"-->
+        <param name="Часы в неделю">8</param>
+        <!--Описание курса-->
+        <picture>https://avatars.mds.yandex.net/get-lpc/1674605/c1dc5b56-67ba-4a57-8703-58f1723ea1ea/width_360x2</picture>
+        <description>Лучший курс для экзамена IELTS</description>
+      </offer>
+      <offer id="929959391421">
+        <name>iOS-разработчик c нуля</name>
+        <url>https://courses.sample.s3.yandex.net/ios-razrabotchik-s-nulya</url>
+        <categoryId>103</categoryId><!--Обязательная ссылка на категорию. Можно указать до 2х значений категории-->
+        <set-ids>s2</set-ids><!--Можно указать несколько наборов через запятую-->
+        <!--Общая цена курса-->
+        <price>0</price><!--Нет общей цены, есть только цена за месяц-->
+        <currencyId>RUR</currencyId>
+        <!--Цена за месяц-->
+        <param name="Ежемесячная цена">2300</param>
+        <param name="Ежемесячная цена по скидке">2100</param>
+        <param name="Дата окончания ежемесячной скидки">2021-04-20</param>
+        <!--Сроки курсов-->
+        <param name="Ближайшая дата">2021-08-01</param>
+        <param name="Продолжительность" unit="месяц">12</param>
+        <!--Программа обучения-->
+        <param name="План" unit="Блок 1">Программирование на Swift></param>
+        <param name="План" unit="Блок 2">Мобильная iOS-разработка></param>
+        <param name="План" unit="Блок 3">Мобильная разработка PRO></param>
+        <!--Формат и методы обучения-->
+        <param name="Формат обучения">В группе c наставником</param><!--Возможные значения - "Самостоятельно", "Самостоятельно с наставником", "В группе c наставником", "С преподавателем"-->
+        <param name="Есть вебинары">true</param>
+        <param name="Есть текстовые уроки">true</param>
+        <param name="Есть тренажеры">true</param>
+        <!--Параметры курса-->
+        <param name="Сложность">Для новичков</param><!--Возможные значения - "Для новичков" или "Для опытных"-->
+        <param name="Тип обучения">Курс</param><!--Возможные значения - "Курс" или "Профессия"-->
+        <param name="Результат обучения">Диплом</param><!--Возможные значения - "Сертификат", "Диплом", "Удостоверение"-->
+        <param name="Часы в неделю">3</param>
+        <!--Описание курса-->
+        <description>Станьте разработчиком под iOS — научитесь создавать приложения, которые смогут выйти в топ App Store></description>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
