@@ -1,10 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<yml_catalog date="2022-01-22 13:22">
+<yml_catalog date="2022-01-23 22:20">
   <shop>
     <name>Онлайн-курсы</name>
     <company>Яндекс.Практикум</company>
     <url>practicum.yandex.ru</url>
     <email>support@praktikum.yandex.ru</email>
+    <picture>https://code.s3.yandex.net/Marketing/web-plus.png</picture>
+    <description>Курс подойдёт вам, если вы хотите разобраться в веб-разработке. Если же базовые знания у вас уже есть — курс поможет их углубить. Посмотрите программу, чтобы убедиться в этом.</description>
     <sets>
       <set id="s2">
         <name>- Курсы для разработчиков</name>
@@ -514,7 +516,9 @@
       <offer id="1web">
         <name>Веб-разработчик плюс</name>
         <url>https://practicum.yandex.ru/web-plus/</url>
-        <categoryId>101</categoryId>
+        <categoryId>101
+
+Веб-разработка</categoryId>
         <set-ids>s2,s5,s6, s8,s1б(10),s11,s16 </set-ids>
         <price>216000</price>
         <currencyId>RUR</currencyId>
@@ -534,10 +538,10 @@
 
 - Вы узнаете, как устроены программа и обучение. Ознакомитесь с организационными деталями и подготовите компьютер к написанию кода. Кроме этого, вспомните ключевые моменты из вводного курса: так проще перейти к новому материалу.</param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -546,13 +550,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/web-plus.png</picture>
-        <description>Курс подойдёт вам, если вы хотите разобраться в веб-разработке. Если же базовые знания у вас уже есть — курс поможет их углубить. Посмотрите программу, чтобы убедиться в этом.</description>
       </offer>
       <offer id="2web">
         <name>Веб-разработчик</name>
         <url>https://practicum.yandex.ru/web/</url>
-        <categoryId>101</categoryId>
+        <categoryId>101
+
+еб-разработка)</categoryId>
         <set-ids>s1,s2,s5,s6,s8,s11</set-ids>
         <price>100000</price>
         <currencyId>RUR</currencyId>
@@ -568,10 +572,10 @@
         <param name="План" unit="Введение">Основы HTML, CSS, JS: бесплатный вводный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -580,13 +584,12 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/web.png</picture>
-        <description>Веб-разработчик разрабатывает сайт на языках HTML, CSS и JavaScript. Создаёт интерфейсы с помощью библиотеки React. Настраивает Git, чтобы работать в команде, и Webpack, чтобы собирать файлы проекта автоматически. Веб-разработчик разбирается и в устройстве сервера: может настроить Nginx и запрограммировать сервер на Node.js.</description>
       </offer>
       <offer id="отсутствет ">
         <name>C++ разработчик</name>
         <url>https://practicum.yandex.ru/cpp/</url>
-        <categoryId>"106"</categoryId>
+        <categoryId>"106"
+(Разработка на C++)</categoryId>
         <set-ids>s1,s2,s6,s10</set-ids>
         <price>94 500</price>
         <currencyId>RUR</currencyId>
@@ -602,10 +605,10 @@
         <param name="План" unit="Введение">Основы C++. Бесплатный вводный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -614,13 +617,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/landings-professions/cpp/fb_banner.png</picture>
-        <description>Разработчик C++ участвует в создании сложных IT-продуктов: от беспилотных автомобилей и робототехники до веб-браузеров, микроконтроллеров, серверов и видеоигр. Вы освоите инструменты программирования: Git, компиляторы, IDE. Изучите базовые алгоритмы, структуры данных и стандартную библиотеку C++. Узнаете, как писать эффективный код. Создадите несколько действующих сервисов. Проходить курс будет проще, если у вас есть опыт программирования на других языках.</description>
       </offer>
       <offer id="1python">
         <name>Python-разработчик плюс</name>
         <url>https://practicum.yandex.ru/python-developer-plus/</url>
-        <categoryId>"104"</categoryId>
+        <categoryId>"104"
+
+(Разработка на Python)</categoryId>
         <set-ids>s1,s2,s6,s8,s11,s16</set-ids>
         <price>168000</price>
         <currencyId>RUR</currencyId>
@@ -636,10 +639,10 @@
         <param name="План" unit="Введение">Основы Python: бесплатный вводный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -648,13 +651,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/python-developer-plus.png</picture>
-        <description>Курс подойдёт вам, если вы хотите с нуля разобраться в python-разработке и найти новую работу. Если же базовые знания у вас уже есть — то можно выбрать более короткие программы обучения.</description>
       </offer>
       <offer id="2python">
         <name>Python-разработчик</name>
         <url>https://practicum.yandex.ru/backend-developer/</url>
-        <categoryId>"104"</categoryId>
+        <categoryId>"104"
+
+(Разработка на Python)</categoryId>
         <set-ids>s1,s2,s6,s8,s11,</set-ids>
         <price>90000</price>
         <currencyId>RUR</currencyId>
@@ -670,10 +673,10 @@
         <param name="План" unit="Введение">Основы Python: бесплатный вводный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -682,13 +685,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/backend-developer.png</picture>
-        <description>Python-разработчик создаёт бэкенд сайтов: мозг, который принимает запросы, общается с базой данных и передаёт нужную информацию пользователю. Разработчик проектирует алгоритмы взаимодействия сайта с другими интернет-сервисами. Вы изучите язык Python: он востребован и прост. Вы также освоите важнейшие инструменты бэкендера: Django, базы данных, git. В процессе обучения создадите несколько действующих сервисов.</description>
       </offer>
       <offer id="1java">
         <name>Java-разработчик</name>
         <url>practicum.yandex.ru/java-developer/</url>
-        <categoryId>"107"</categoryId>
+        <categoryId>"107"
+
+(Разработка на Java)</categoryId>
         <set-ids>s1,s2,s6,s8,s11</set-ids>
         <price>110000</price>
         <currencyId>RUR</currencyId>
@@ -704,10 +707,10 @@
         <param name="План" unit="Введение">Основы Java: бесплатный вводный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -716,8 +719,6 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/java-developer.png</picture>
-        <description>Java-разработчик создаёт сложные банковские системы, пишет сервисы для поиска авиабилетов или прослушивания музыки, работает с системами для обработки больших объёмов данных. Вы изучите язык Java, чтобы в командах с другими разработчиками создавать продукты наподобие Яндекс.Музыки, Тинькофф-банка, Netflix и Кинопоиска.</description>
       </offer>
       <offer id="1react">
         <name>React-разработчик</name>
@@ -738,10 +739,10 @@
         <param name="План" unit="Введение">Бесплатное входное тестирование</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -750,13 +751,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">20</param>
-        <picture>https://code.s3.yandex.net/Marketing/react.png</picture>
-        <description>Курс «React-разработчик» — это трёхмесячный интенсив для погружения в экосистему React, работы с популярными технологиями и изучения их альтернатив. Мы приготовили программу с теорией, практикой, постоянным общением и дополнительными материалами.</description>
       </offer>
       <offer id="1algorithms">
         <name>Алгоритмы для разработчиков</name>
         <url>https://practicum.yandex.ru/algorithms/</url>
-        <categoryId>"109"</categoryId>
+        <categoryId>"109"
+
+Алгоритмы и структуры данных</categoryId>
         <set-ids>s1,s2,s9, 10</set-ids>
         <price>62000</price>
         <currencyId>RUR</currencyId>
@@ -772,10 +773,10 @@
         <param name="План" unit="Введение">Введение в алгоритмы</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -784,13 +785,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">10</param>
-        <picture>https://code.s3.yandex.net/Marketing/algorithms.png</picture>
-        <description>Это курс о базовых алгоритмах и структурах данных. Благодаря нему вы научитесь быстрее писать чистый код, видеть разные варианты решения задачи и сравнивать их по эффективности. Если вы планируете менять место работы, знание алгоритмов пригодится на собеседованиях. Кроме того, в курс включена консультация или сопровождение при поиске работы.</description>
       </offer>
       <offer id="3python">
         <name>Мидл python-разработчик</name>
         <url>https://practicum.yandex.ru/middle-python/</url>
-        <categoryId>"104"</categoryId>
+        <categoryId>"104"
+
+Разработка на Python</categoryId>
         <set-ids>s1,s2,s6,s8,s10</set-ids>
         <price>85500</price>
         <currencyId>RUR</currencyId>
@@ -806,10 +807,10 @@
         <param name="План" unit="Введение">Сервис Admin panel и ETL</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -818,13 +819,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">20</param>
-        <picture>https://code.s3.yandex.net/Marketing/middle-python.png</picture>
-        <description>Это продвинутый курс по Python для разработчиков с опытом, которые знакомы с основами языка, базами данных, API. Готовьтесь — вводной части в Python не будет. Начнём сразу с задач.</description>
       </offer>
       <offer id="1middlefrontend">
         <name>Мидл фронтенд-разработчик</name>
         <url>https://practicum.yandex.ru/middle-frontend/</url>
-        <categoryId>"101"</categoryId>
+        <categoryId>"101"
+
+(Веб-разработка)</categoryId>
         <set-ids>s1,s2,s5,s8,s10</set-ids>
         <price>78000</price>
         <currencyId>RUR</currencyId>
@@ -840,10 +841,10 @@
         <param name="План" unit="Введение">JavaScript: параллельный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -852,13 +853,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/middle-frontend.png</picture>
-        <description>Это продвинутая программа обучения для разработчиков, которые уверенно чувствуют себя с HTML, CSS и JavaScript, имеют опыт работы с одним из фреймворков.</description>
       </offer>
       <offer id="1qaengineer">
         <name>Инженер по тестированию</name>
         <url>https://practicum.yandex.ru/qa-engineer/</url>
-        <categoryId>"108"</categoryId>
+        <categoryId>"108"
+
+(Тестирование)</categoryId>
         <set-ids>s1,s2,s8,s11,s15</set-ids>
         <price>60000</price>
         <currencyId>RUR</currencyId>
@@ -874,10 +875,10 @@
         <param name="План" unit="Введение">Основы тестирования: бесплатный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -886,13 +887,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/qa-engineer.png</picture>
-        <description>Тестировщик создаёт сценарии тестирования, прогнозирует сбои и находит ошибки в продуктах. Вы изучите техники тест-дизайна и овладеете инструментами Postman, Charles, Яндекс.Трекер. Чтобы автоматизировать тестирование, вы освоите основы Javascript и библиотеки Puppeteer.</description>
       </offer>
       <offer id="1qaautomation">
         <name>Автоматизатор тестирования</name>
         <url>https://practicum.yandex.ru/qa-automation-engineer-java/</url>
-        <categoryId>"108"</categoryId>
+        <categoryId>"108"
+
+(Тестирование)</categoryId>
         <set-ids>s1,s2,s8,s11,s15</set-ids>
         <price>65000</price>
         <currencyId>RUR</currencyId>
@@ -908,10 +909,10 @@
         <param name="План" unit="Введение">Java</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -920,13 +921,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">10-15</param>
-        <picture>https://code.s3.yandex.net/Marketing/qa-automation-engineer-java.png</picture>
-        <description>Автоматизатор отвечает за внедрение, поддержку и развитие инфраструктуры автотестов. Это помогает ускорить и удешевить процесс тестирования продукта. В течение курса вы научитесь автоматизировать проверки для веб-приложений, API и писать юнит-тесты. Курс поможет вам перейти на новую ступень в тестировании и повысить свою рыночную ценность как специалиста.</description>
       </offer>
       <offer id="1datascientist">
         <name>Специалист по Data Science</name>
         <url>https://practicum.yandex.ru/data-scientist/</url>
-        <categoryId>"303"</categoryId>
+        <categoryId>"303"
+
+Data Science</categoryId>
         <set-ids>s1,s3,s8</set-ids>
         <price>95000</price>
         <currencyId>RUR</currencyId>
@@ -942,10 +943,10 @@
         <param name="План" unit="Введение">Основы Python и анализа данных: бесплатный вводный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -954,13 +955,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/data-scientist.png</picture>
-        <description>Специалист по Data Science структурирует и анализирует большие объёмы данных, применяет машинное обучение для предсказания событий и обнаружения неочевидных закономерностей. Помогает создавать и улучшать продукты в бизнесе, промышленности и науке. Мы хотим научить вас основным инструментам этой профессии: Python и его библиотекам, в том числе Scikit-Learn и XGBoost, Jupyter Notebook, SQL.</description>
       </offer>
       <offer id="2datascientist">
         <name>Специалист по Data Science плюс</name>
         <url>https://practicum.yandex.ru/data-scientist-plus/</url>
-        <categoryId>"303"</categoryId>
+        <categoryId>"303"
+
+Data Science</categoryId>
         <set-ids>s1,s3,s8,s16</set-ids>
         <price>228000</price>
         <currencyId>RUR</currencyId>
@@ -976,10 +977,10 @@
         <param name="План" unit="Введение">Основы Python и анализа данных: бесплатный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">FALSE</param>
         <param name="Сложность">Для новичков</param>
@@ -988,13 +989,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">Диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/data-scientist-plus.png</picture>
-        <description>Расширенная программа для тех, кто хочет построить карьеру в сфере data science</description>
       </offer>
       <offer id="1dataanalyst">
         <name>Аналитик данных</name>
         <url>https://practicum.yandex.ru/data-analyst/</url>
-        <categoryId>"301"</categoryId>
+        <categoryId>"301"
+
+(Аналитика данных)</categoryId>
         <set-ids>s1,s3,s8</set-ids>
         <price>70000</price>
         <currencyId>RUR</currencyId>
@@ -1010,10 +1011,10 @@
         <param name="План" unit="Введение">Основы Python и анализа данных: бесплатный вводный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1022,13 +1023,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/data-analyst.png</picture>
-        <description>Аналитик данных извлекает из данных смысл: структурирует их, формулирует и проверяет гипотезы, находит закономерности и делает выводы. Его работа помогает принимать решения в бизнесе, управлении и науке. Мы хотим научить вас пользоваться основными инструментами для получения профессии: Python и его библиотеки, Jupyter Notebook, SQL.</description>
       </offer>
       <offer id="2dataanalyst">
         <name>Аналитик данных плюс</name>
         <url>https://practicum.yandex.ru/data-analyst-plus/</url>
-        <categoryId>"301"</categoryId>
+        <categoryId>"301"
+
+(Аналитика данных)</categoryId>
         <set-ids>s1,s3,s8,s16</set-ids>
         <price>168000</price>
         <currencyId>RUR</currencyId>
@@ -1044,10 +1045,10 @@
         <param name="План" unit="Введение">Основы Python и анализа данных: бесплатный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1056,13 +1057,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">диплом</param>
         <param name="Часы в неделю">15</param>
-        <picture>https://code.s3.yandex.net/Marketing/data-analyst-plus.png</picture>
-        <description>Курс подойдёт, если вы только начинаете разбираться в аналитике данных и не хотите ничего упустить. Если базовые знания уже есть, вы сможете их углубить и заполнить пробелы. Посмотрите план обучения, чтобы убедиться.</description>
       </offer>
       <offer id="1interfacedesigner">
         <name>Дизайнер интерфейсов</name>
         <url>https://practicum.yandex.ru/interface-designer/</url>
-        <categoryId>"403"</categoryId>
+        <categoryId>"403"
+
+(Дизайнер интерфейсов)</categoryId>
         <set-ids>s1,s4,s8,s17</set-ids>
         <price>96000</price>
         <currencyId>RUR</currencyId>
@@ -1078,10 +1079,10 @@
         <param name="План" unit="Введение">Вводный модуль - бесплатно</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1090,13 +1091,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">диплом</param>
         <param name="Часы в неделю">10</param>
-        <picture>https://code.s3.yandex.net/Marketing/interface-designer.png</picture>
-        <description>Определить потребности бизнеса → Исследовать аудиторию → Спроектировать пользовательский опыт → Разработать внешний вид сайта или приложения → Сделать жизнь людей лучше. Всё это — задачи дизайнера интерфейсов. На этом курсе вам предстоит решить каждую из них.</description>
       </offer>
       <offer id="1graphicdesigner">
         <name>Графический дизайнер</name>
         <url>https://practicum.yandex.ru/graphic-designer/</url>
-        <categoryId>"401"</categoryId>
+        <categoryId>"401"
+
+(Дизайнер интерфейсов)</categoryId>
         <set-ids>s1,s4,s8,s17</set-ids>
         <price>50000</price>
         <currencyId>RUR</currencyId>
@@ -1112,10 +1113,10 @@
         <param name="План" unit="Введение">Бесплатная вводная часть: введение в профессию</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1124,13 +1125,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">10</param>
-        <picture>https://code.s3.yandex.net/Marketing/graphic-designer.png</picture>
-        <description>Графический дизайнер делает баннеры для интернет-рекламы, изображения для соцсетей, верстает макеты лендингов или презентации к проекту, придумывает логотипы и разрабатывает мерч, который хочется носить. Чтобы стать хорошим графическим дизайнером, необязательно уметь рисовать. Мы научим вас работать с Figma и поможем собрать первые проекты в портфолио.</description>
       </offer>
       <offer id="">
         <name>Коммуникационный дизайнер</name>
         <url>https://practicum.yandex.ru/communication-designer/</url>
-        <categoryId>"402"</categoryId>
+        <categoryId>"402"
+
+(Коммуникационный дизайн)</categoryId>
         <set-ids>s1, ...</set-ids>
         <price>253000</price>
         <currencyId>RUR</currencyId>
@@ -1146,10 +1147,10 @@
         <param name="План" unit="Введение">Бесплатная вводная часть: знакомство с профессией</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1158,13 +1159,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">диплом</param>
         <param name="Часы в неделю">10</param>
-        <picture>https://code.s3.yandex.net/landings-professions/communication-designer/for_landing.svg</picture>
-        <description>За 18 месяцев или 700 часов занятий вы освоите новую профессию и станете коммуникационным дизайнером. Дистанционное онлайн-обучение в сервисе Яндекс.Практикум для получения профессии дизайнера коммуникаций.</description>
       </offer>
       <offer id="">
         <name>UX-копирайтинг</name>
         <url>https://practicum.yandex.ru/ux-copywriting/</url>
-        <categoryId>"406"</categoryId>
+        <categoryId>"406"
+
+(Продуктовый дизайн)</categoryId>
         <set-ids>s1, ...</set-ids>
         <price>26000</price>
         <currencyId>RUR</currencyId>
@@ -1180,10 +1181,10 @@
         <param name="План" unit="Введение">Бесплатная вводная часть</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1192,8 +1193,6 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Удостоверение</param>
         <param name="Часы в неделю">5-6</param>
-        <picture>https://code.s3.yandex.net/landings-professions/ux-copywriting/fb_banner_img_06.png</picture>
-        <description>Онлайн-курс «UX-копирайтинг» от сервиса Яндекс.Практикум. 2 месяца обучения UX-редактуре с выдачей сертификата.</description>
       </offer>
       <offer id="">
         <name>UX-исследования</name>
@@ -1214,10 +1213,10 @@
         <param name="План" unit="Введение">Бесплатная вводная часть</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1226,8 +1225,6 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">6-8</param>
-        <picture>https://code.s3.yandex.net/landings-professions/ux-research/metauxr.png</picture>
-        <description>Онлайн-курс «UX-исследования» от сервиса Яндекс.Практикум. 3 месяца обучения профессии UX-аналитика с нуля с выдачей сертификата. Обучаем UX-исследователей дистанционно.</description>
       </offer>
       <offer id="">
         <name>Акселератор дизайн-навыков</name>
@@ -1248,10 +1245,10 @@
         <param name="План" unit="Введение">Вводная встреча</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">FALSE</param>
-        <param name="Есть текстовые уроки">FALSE</param>
         <param name="Есть вебинары">FALSE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">FALSE</param>
+        <param name="Есть текстовые уроки">FALSE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -1260,13 +1257,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">2-3</param>
-        <picture>https://code.s3.yandex.net/landings-professions/design-skills-accelerator/fb_banner_img_008.png</picture>
-        <description>С помощью нашего акселератора дизайн-навыков вы будете набивать руку на реальных проектах под менторством опытного дизайнера. Прокачка практических навыков в дизайне от сервиса Яндекс.Практикум.</description>
       </offer>
       <offer id="">
         <name>Веб-дизайн для начинающих</name>
         <url>https://practicum.yandex.ru/web-design-beginners/</url>
-        <categoryId>"405"</categoryId>
+        <categoryId>"405"
+
+(Веб-дизайн)</categoryId>
         <set-ids>s1, ...</set-ids>
         <price>50000</price>
         <currencyId>RUR</currencyId>
@@ -1282,10 +1279,10 @@
         <param name="План" unit="Введение">Вводный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">FALSE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">FALSE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1294,13 +1291,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">10</param>
-        <picture>https://code.s3.yandex.net/landings-professions/web-design-beginners/fb_banner_img_2x.png</picture>
-        <description>Предлагаем вам пройти обучение веб-дизайну сайтов для начинающих в сервисе Яндекс.Практикум. За 4 месяца и примерно 200 часов занятий вы освоите три самых популярных инструмента веб-дизайнера. Онлайн-курс поможет освоить web-дизайн с нуля и получить востребованную профессию.</description>
       </offer>
       <offer id="1internetmarketing">
         <name>Менеджер по интернет-маркетингу</name>
         <url>https://practicum.yandex.ru/internet-marketing/</url>
-        <categoryId>"501"</categoryId>
+        <categoryId>"501"
+
+(Интернет-маркетинг)</categoryId>
         <set-ids>s1,s7,s8,s12,s18</set-ids>
         <price>116000</price>
         <currencyId>RUR</currencyId>
@@ -1316,10 +1313,10 @@
         <param name="План" unit="Введение">Вводный курс. Об обучении в Практикуме</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">FALSE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">FALSE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">FALSE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -1328,13 +1325,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">диплом</param>
         <param name="Часы в неделю">10-15</param>
-        <picture>https://code.s3.yandex.net/Marketing/internet-marketing.png</picture>
-        <description>Менеджер по интернет-маркетингу управляет разными инструментами маркетинга, чтобы оптимизировать воронку продаж и в конечном итоге — достигать бизнес-результатов. В своей работе он использует навыки аналитики, прогнозирования, стратегического и тактического планирования. Такой специалист глубоко разбирается в ключевых инструментах интернет-маркетинга, хотя часто и не запускает рекламу самостоятельно. Он принимает решения, убеждает в них руководство, а затем организует работы команды: ставит задачи, контролирует их исполнение и даёт обратную связь.</description>
       </offer>
       <offer id="1contextualspecialist">
         <name>Специалист по контекстной рекламе</name>
         <url>https://practicum.yandex.ru/contextual-specialist/</url>
-        <categoryId>"504"</categoryId>
+        <categoryId>"504"
+
+(Контекстная реклама)</categoryId>
         <set-ids>s1,s8,s12,s17</set-ids>
         <price>78000</price>
         <currencyId>RUR</currencyId>
@@ -1350,10 +1347,10 @@
         <param name="План" unit="Введение">Введение в профессию «Cпециалист по контекстной рекламе»</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">FALSE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1362,13 +1359,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">диплом</param>
         <param name="Часы в неделю">10</param>
-        <picture>https://code.s3.yandex.net/Marketing/contextual-specialist.png</picture>
-        <description>Специалист по контекстной рекламе запускает кампании в Яндекс.Директе и Google Ads, оптимизирует их так, чтобы они приносили больше клиентов по меньшей цене. Мы научим настраивать рекламу, создавать объявления, строить медиаплан и работать с аналитикой в Яндекс.Метрике и Google Analytics. Рассмотрим примеры продвижения товаров и услуг разных отраслей бизнеса. Вы запустите настоящие рекламные кампании и поработаете с кейсами реальных бизнесов.</description>
       </offer>
       <offer id="1targetingspecialist">
         <name>Специалист по таргетированной рекламе</name>
         <url>https://practicum.yandex.ru/targeting-specialist/</url>
-        <categoryId>"503"</categoryId>
+        <categoryId>"503"
+
+(Таргетированная реклама)</categoryId>
         <set-ids>s1,s8,s12,s17</set-ids>
         <price>81000</price>
         <currencyId>RUR</currencyId>
@@ -1384,10 +1381,10 @@
         <param name="План" unit="Введение">Вводный курс: Введение в таргетированную рекламу.</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1396,13 +1393,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">диплом</param>
         <param name="Часы в неделю">10</param>
-        <picture>https://code.s3.yandex.net/Marketing/targeting-specialist.png</picture>
-        <description>Специалист по таргетингу запускает рекламу в соцсетях и оптимизирует её так, чтобы она приносила больше клиентов по меньшей цене. Мы научим настраивать рекламу в Facebook, Instagram, ВКонтакте, TikTok и myTarget. Создавать креативы, строить медиаплан и работать с аналитикой в Яндекс.Метрике и Google Analytics. Рассмотрим примеры продвижения товаров и услуг разных отраслей бизнеса. Вы запустите настоящие рекламные кампании и поработаете с кейсами реальных бизнесов.</description>
       </offer>
       <offer id="">
         <name>SMM-специалист</name>
         <url></url>
-        <categoryId>"502"</categoryId>
+        <categoryId>"502"
+
+(SMM-маркетинг)</categoryId>
         <set-ids></set-ids>
         <price></price>
         <currencyId>RUR</currencyId>
@@ -1418,10 +1415,10 @@
         <param name="План" unit="Введение"></param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки"></param>
-        <param name="Есть текстовые уроки"></param>
         <param name="Есть вебинары"></param>
         <param name="Есть домашние работы"></param>
+        <param name="Есть видеоуроки"></param>
+        <param name="Есть текстовые уроки"></param>
         <param name="Есть тренажеры"></param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность"></param>
@@ -1430,13 +1427,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения"></param>
         <param name="Часы в неделю"></param>
-        <picture></picture>
-        <description></description>
       </offer>
       <offer id="">
         <name>ECommerce</name>
         <url>https://practicum.yandex.ru/promo/ecom/ecom-specialist/</url>
-        <categoryId>"512"</categoryId>
+        <categoryId>"512"
+
+(Маркетинг e-commerce)</categoryId>
         <set-ids>s1, ...</set-ids>
         <price>79 000</price>
         <currencyId>RUR</currencyId>
@@ -1452,10 +1449,10 @@
         <param name="План" unit="Введение">Вводный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -1464,13 +1461,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">10</param>
-        <picture></picture>
-        <description>За 5 месяцев обучения вы не только поймёте, как работает e-commerce, но и лучше разберётесь во всём бизнесе целиком: от бизнес-модели до IT-инфраструктуры и глубокого понимания маркетинговых инструментов.</description>
       </offer>
       <offer id="">
         <name>CRM маркетолог</name>
         <url>https://practicum.yandex.ru/crm/</url>
-        <categoryId>"508"</categoryId>
+        <categoryId>"508"
+
+(CRM-маркетинг)</categoryId>
         <set-ids>s1, ...</set-ids>
         <price>84000</price>
         <currencyId>RUR</currencyId>
@@ -1486,10 +1483,10 @@
         <param name="План" unit="Введение">Вводная часть</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -1498,13 +1495,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">диплом</param>
         <param name="Часы в неделю">10</param>
-        <picture>https://code.s3.yandex.net/landings-professions/crm/image(8).png</picture>
-        <description>Онлайн-курс «Специалист по CRM-маркетингу» от сервиса Яндекс.Практикум. Программа курса и цены. 6 месяцев обучения на CRM-маркетолога с нуля с выдачей диплома о профессиональной переподготовке. Обучаем профессии CRM-маркетолога дистанционно.</description>
       </offer>
       <offer id="1projectmanager">
         <name>Менеджер проектов</name>
         <url>https://practicum.yandex.ru/project-manager/</url>
-        <categoryId>"202"</categoryId>
+        <categoryId>"202"
+
+(Проектный менеджмент)</categoryId>
         <set-ids>s1,s7,s8,s17</set-ids>
         <price>96000</price>
         <currencyId>RUR</currencyId>
@@ -1520,10 +1517,10 @@
         <param name="План" unit="Введение">Вводный модуль</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1532,13 +1529,13 @@
         <param name="С трудоустройством">TRUE</param>
         <param name="Результат обучения">диплом</param>
         <param name="Часы в неделю">10</param>
-        <picture>https://code.s3.yandex.net/Marketing/targeting-specialist.png</picture>
-        <description>Менеджер проектов — это человек, без которого трудно запустить сайт, приложение или сервис. Он превращает хаос в порядок, а идеи клиента — в задачи для дизайнеров и разработчиков. Курс будет полезен начинающим менеджерам с опытом до года и тем, кто хочет освоить профессию с нуля и создавать продукты, меняющие жизни людей.</description>
       </offer>
       <offer id="1brandmanager">
         <name>Бренд-менеджер</name>
         <url>https://practicum.yandex.ru/brand-management/</url>
-        <categoryId>"511"</categoryId>
+        <categoryId>"511"
+
+(Бренд-менеджмент)</categoryId>
         <set-ids>s1,s7,s9,s18</set-ids>
         <price>90000</price>
         <currencyId>RUR</currencyId>
@@ -1554,10 +1551,10 @@
         <param name="План" unit="Введение">Вводный курс</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для опытных</param>
@@ -1566,13 +1563,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">10</param>
-        <picture>https://code.s3.yandex.net/Marketing/brand-management.png</picture>
-        <description>Это курс для маркетологов, которые хотят управлять брендом так, чтобы он помогал бизнесу расти. Вы научитесь разрабатывать коммуникационную стратегию бренда для продвижения в онлайн-каналах и анализировать её результаты.За 6 месяцев курса вы прокачаете навыки дизайн мышления, напишите креативный бриф для команды дизайнеров, определите точки контакта с потребителем, научитесь считать "P&amp;amp;L" и ROI, создавать selling story, чтобы презентовать проект отделу продаж или инвесторам, и делать из сотрудников компании бренд-амбассадоров.</description>
       </offer>
       <offer id="1teammanagement">
         <name>Как управлять командой. Курс для руководителей</name>
         <url>https://practicum.yandex.ru/team-management/</url>
-        <categoryId>"208"</categoryId>
+        <categoryId>"208"
+
+(Управление персоналом)</categoryId>
         <set-ids>s1,s7,s9,s18</set-ids>
         <price>65000</price>
         <currencyId>RUR</currencyId>
@@ -1588,10 +1585,10 @@
         <param name="План" unit="Введение">Введение в программу</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1600,13 +1597,13 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">5</param>
-        <picture>https://code.s3.yandex.net/Marketing/team-management.png</picture>
-        <description>Результаты команды, отлаженные процессы и регулярное развитие сотрудников — всё это ответственность руководителя.</description>
       </offer>
       <offer id="">
         <name>Деловая коммуникация для начинающих руководителей</name>
         <url>https://practicum.yandex.ru/communication/</url>
-        <categoryId>"201"</categoryId>
+        <categoryId>"201"
+
+(Компетенции руководителя)</categoryId>
         <set-ids></set-ids>
         <price>30000</price>
         <currencyId>RUR</currencyId>
@@ -1622,10 +1619,10 @@
         <param name="План" unit="Введение">Вводная часть</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">FALSE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1634,8 +1631,6 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">8</param>
-        <picture>https://code.s3.yandex.net/Humanities/communication/landings/fb_banner_img_06.png</picture>
-        <description>За 2 месяца обучения по 10 часов в неделю вы освоите навыки деловой коммуникации. Курс обучения специалистов профессиональному бизнес-общению в онлайн-формате.</description>
       </offer>
       <offer id="">
         <name>Критическое мышление</name>
@@ -1656,10 +1651,10 @@
         <param name="План" unit="Введение">Вводный часть</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">в группе с наставником</param>
-        <param name="Есть видеоуроки">FALSE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары">TRUE</param>
         <param name="Есть домашние работы">TRUE</param>
+        <param name="Есть видеоуроки">FALSE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">TRUE</param>
         <param name="Сложность">Для новичков</param>
@@ -1668,8 +1663,6 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения">Сертификат</param>
         <param name="Часы в неделю">6-9</param>
-        <picture>https://code.s3.yandex.net/landing/meta/social_thinking.png</picture>
-        <description>Онлайн-курс «Критическое мышление» от сервиса Яндекс.Практикум. 2 месяца обучения навыку и развитию критического мышления с выдачей сертификата.</description>
       </offer>
       <offer id="">
         <name>Наставничество для тимлидов</name>
@@ -1690,10 +1683,10 @@
         <param name="План" unit="Введение">Кто такой наставник</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">Самостоятельно</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары"></param>
         <param name="Есть домашние работы"></param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">FALSE</param>
         <param name="Сложность">Для новичков</param>
@@ -1702,8 +1695,6 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения"></param>
         <param name="Часы в неделю"></param>
-        <picture>https://code.s3.yandex.net/landings-professions/it-mentor/наставничество_главная.jpg</picture>
-        <description>Наставничество для тимлидов: как давать обратную связь, решать конфликты и мотивировать. Для кого подойдет этот курс и чему можно научиться наставникам в Яндекс.Практикуме.</description>
       </offer>
       <offer id="">
         <name>Excel для работы</name>
@@ -1724,10 +1715,10 @@
         <param name="План" unit="Введение">Анализ данных</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">Самостоятельно</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары"></param>
         <param name="Есть домашние работы"></param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">FALSE</param>
         <param name="Сложность">Для новичков</param>
@@ -1736,8 +1727,6 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения"></param>
         <param name="Часы в неделю"></param>
-        <picture>https://code.s3.yandex.net/landings-professions/excel-for-work/excel-for-work-sharing-image.png</picture>
-        <description>Бесплатный курс Excel научит работать с самыми востребованными формулами, и вы сможете быстрее решать 90% своих задач на работе. Это не набор вебинаров: вы с первого урока учитесь автоматизировать свою работу в Excel. Онлайн-обучение в сервисе Яндекс.Практикум дистанционно.</description>
       </offer>
       <offer id="">
         <name>Визуальные презентации</name>
@@ -1758,10 +1747,10 @@
         <param name="План" unit="Введение">Подготовка к презентации</param>
         <param name="План" unit="Модуль 1"></param>
         <param name="Формат обучения">Самостоятельно</param>
-        <param name="Есть видеоуроки">TRUE</param>
-        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть вебинары"></param>
         <param name="Есть домашние работы"></param>
+        <param name="Есть видеоуроки">TRUE</param>
+        <param name="Есть текстовые уроки">TRUE</param>
         <param name="Есть тренажеры">TRUE</param>
         <param name="Есть сообщество">FALSE</param>
         <param name="Сложность">Для новичков</param>
@@ -1770,8 +1759,6 @@
         <param name="С трудоустройством">FALSE</param>
         <param name="Результат обучения"></param>
         <param name="Часы в неделю"></param>
-        <picture>https://code.s3.yandex.net/landings-professions/visual-presentation/visual-presentation-sharing-image.png</picture>
-        <description>Бесплатный онлайн-курс по созданию презентаций от Максима Ильяхова в сервисе Яндекс.Практикум. 10 часов обучения составлению, оформлению и дизайну презентаций.</description>
       </offer>
     </offers>
   </shop>

@@ -10,6 +10,16 @@ SPREADSHEET_ID = '1d8qVc3Ayt1O1eBU-ikcXrbLvCLHWawpd5WPniVajmRc'
 root = etree.Element('yml_catalog',
                      date=datetime.today().strftime('%Y-%m-%d %H:%M'))
 
+tags = ('name', 'url', 'category Id', 'price', 'currency Id')
+params = ('Цена по скидке', 'Дата окончания скидки', 'Цена за подписку',
+          'Ежемесячная цена', 'Ежемесячная цена по скидке',
+          'Дата окончания ежемесячной скидки', 'Ближайшая дата',
+          'Формат обучения', 'Есть видеоуроки', 'Есть текстовые уроки',
+          'Есть вебинары', 'Есть домашние работы', 'Есть тренажеры',
+          'Есть сообщество', 'Сложность', 'Тип обучения',
+          'Есть бесплатная часть', 'С трудоустройством', 'Результат обучения',
+          'Часы в неделю', 'Классы')
+
 
 def parse_sheet():
     client = gspread.service_account(filename=CREDENTIALS_FILE)
@@ -18,7 +28,6 @@ def parse_sheet():
     return worksheet.get_all_records()
 
 
-# Далее длина строки игнорируется для читаемости
 def create_yml():
     # res = parse_sheet()
     shop = etree.SubElement(root, 'shop')
@@ -26,45 +35,42 @@ def create_yml():
     etree.SubElement(shop, 'company').text = res[0]['company']
     etree.SubElement(shop, 'url').text = res[0]['url_']
     etree.SubElement(shop, 'email').text = res[0]['email']
+    etree.SubElement(shop, 'picture').text = res[0]['picture']
+    etree.SubElement(shop, 'description').text = res[0]['description']
     sets = etree.SubElement(shop, 'sets')
     offers = etree.SubElement(shop, 'offers')
 
     for i in range(len(res)):
         offer = etree.SubElement(offers, 'offer', id=res[i]['offer id'])
-        etree.SubElement(offer, 'name').text = res[i]['name']
-        etree.SubElement(offer, 'url').text = res[i]['url']
-        etree.SubElement(offer, 'categoryId').text = str(res[i]['category Id']).split('\n')[0]
-        set_id_to_sets(i, sets, res)  # Разобраться с сетами!
-        etree.SubElement(offer, 'set-ids').text = str(res[i]['set id']).split('\n')[0]
-        etree.SubElement(offer, 'price').text = str(res[i]['price'])
-        etree.SubElement(offer, 'currencyId').text = res[i]['currency Id']
-        etree.SubElement(offer, 'param', name='Цена по скидке').text = res[i]['Цена по скидке']
-        etree.SubElement(offer, 'param', name='Дата окончания скидки').text = res[i]['Дата окончания скидки']
-        etree.SubElement(offer, 'param', name='Цена за подписку').text = res[i]['Цена за подписку']
-        etree.SubElement(offer, 'param', name='Оплата в рассрочку').text = str(res[i]['Оплата в рассрочку'])  # Доработать таблицу и переписать!
-        etree.SubElement(offer, 'param', name='Ежемесячная цена').text = str(res[i]['Ежемесячная цена'])
-        etree.SubElement(offer, 'param', name='Ежемесячная цена по скидке').text = str(res[i]['Ежемесячная цена по скидке'])
-        etree.SubElement(offer, 'param', name='Дата окончания ежемесячной скидки').text = str(res[i]['Дата окончания ежемесячной скидки'])
-        etree.SubElement(offer, 'param', name='Ближайшая дата').text = str(res[i]['Ближайшая дата'])
-        etree.SubElement(offer, 'param', name='Продолжительность', unit="месяц").text = str(res[i]['Продолжительность'])  # Доработать таблицу и переписать!
-        etree.SubElement(offer, 'param', name='План', unit='Введение').text = str(res[i]['План Вводный модуль'])  # Доработать таблицу и переписать!
-        etree.SubElement(offer, 'param', name='План', unit='Модуль 1').text = str(res[i]['План Модуль 1'])  # Доработать таблицу и переписать!
-        etree.SubElement(offer, 'param', name='Формат обучения').text = str(res[i]['Формат обучения'])
-        etree.SubElement(offer, 'param', name='Есть видеоуроки').text = str(res[i]['Есть видеоуроки'])
-        etree.SubElement(offer, 'param', name='Есть текстовые уроки').text = str(res[i]['Есть текстовые уроки'])
-        etree.SubElement(offer, 'param', name='Есть вебинары').text = str(res[i]['Есть вебинары'])
-        etree.SubElement(offer, 'param', name='Есть домашние работы').text = str(res[i]['Есть домашние работы'])
-        etree.SubElement(offer, 'param', name='Есть тренажеры').text = str(res[i]['Есть тренажеры'])
-        etree.SubElement(offer, 'param', name='Есть сообщество').text = str(res[i]['Есть сообщество'])
-        etree.SubElement(offer, 'param', name='Сложность').text = str(res[i]['Сложность'])
-        etree.SubElement(offer, 'param', name='Тип обучения').text = str(res[i]['Тип обучения'])
-        etree.SubElement(offer, 'param', name='Есть бесплатная часть').text = str(res[i]['Есть бесплатная часть'])
-        etree.SubElement(offer, 'param', name='С трудоустройством').text = str(res[i]['С трудоустройством'])
-        etree.SubElement(offer, 'param', name='Результат обучения').text = str(res[i]['Результат обучения'])
-        etree.SubElement(offer, 'param', name='Часы в неделю').text = str(res[i]['Часы в неделю'])
-        # etree.SubElement(offer, 'param', name='Классы').text = str(res[i]['Классы'])  # Доработать таблицу и переписать!
-        etree.SubElement(offer, 'picture').text = res[i]['picture']
-        etree.SubElement(offer, 'description').text = res[i]['description']
+        set_id_to_sets(i, sets, res)
+        for key, value in res[i].items():
+            if key in tags:
+                key = key.replace('_', '').split()
+                etree.SubElement(offer, ''.join(key)).text = str(value)
+            elif key == 'set id':
+                etree.SubElement(
+                    offer, 'set-ids'
+                ).text = str(res[i]['set id']).split('\n')[0]
+            elif key == 'Оплата в рассрочку':
+                etree.SubElement(
+                    offer, 'param', name='Оплата в рассрочку'
+                ).text = str(res[i]['Оплата в рассрочку'])
+            elif key == 'Продолжительность':
+                etree.SubElement(
+                    offer, 'param', name='Продолжительность', unit="месяц"
+                ).text = str(res[i]['Продолжительность'])
+            elif key == 'План Вводный модуль':
+                etree.SubElement(
+                    offer, 'param', name='План', unit='Введение'
+                ).text = str(res[i]['План Вводный модуль'])
+            elif key == 'План Модуль 1':
+                etree.SubElement(
+                    offer, 'param', name='План', unit='Модуль 1'
+                ).text = str(res[i]['План Модуль 1'])
+            elif key == 'Классы':
+                pass
+            elif key in params:
+                etree.SubElement(offer, 'param', name=key).text = str(value)
 
 
 def set_id_to_sets(i, sets, res):
