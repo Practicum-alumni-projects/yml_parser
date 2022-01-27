@@ -10,7 +10,7 @@ SPREADSHEET_ID = '1d8qVc3Ayt1O1eBU-ikcXrbLvCLHWawpd5WPniVajmRc'
 root = etree.Element('yml_catalog',
                      date=datetime.today().strftime('%Y-%m-%d %H:%M'))
 
-tags = ('name', 'url', 'parentId', 'category Id', 'price', 'currency Id',
+tags = ('name', 'url', 'category Id', 'price', 'currency Id',
         'picture', 'description')
 params = ('Ежемесячная цена', 'Ближайшая дата', 'Формат обучения',
           'Есть видеоуроки', 'Есть текстовые уроки',
@@ -29,6 +29,7 @@ def parse_sheet():
 
 def create_yml():
     # res = parse_sheet()
+    # print(res)
     shop = etree.SubElement(root, 'shop')
     etree.SubElement(shop, 'name').text = res[0]['company']
     etree.SubElement(shop, 'url').text = res[0]['url_']
@@ -40,27 +41,51 @@ def create_yml():
     for i in range(len(res)):
         offer = etree.SubElement(offers, 'offer', id=res[i]['offer id'])
         for key, value in res[i].items():
+            if key == '':
+                continue
             if key in tags and value:
                 key = key.split()
                 etree.SubElement(offer, ''.join(key)).text = str(value)
             elif key == 'Продолжительность':
                 unit_selection(key, value, offer)
-            # elif key.split()[0] == 'План':
-            #     plan()
+            elif key.split()[0] == 'План' and value:
+                plan(key, value, offer)
             elif key in params and value:
                 etree.SubElement(offer, 'param', name=key).text = str(value)
 
 
 def unit_selection(key, value, offer):
     unit = 'месяц'
-    value = str(value).split(',')
+    value = str(value).split(';')
     if len(value) > 1:
         unit = value[1]
     etree.SubElement(offer, 'param', name=key, unit=unit).text = value[0]
 
 
-def plan():
-    pass
+def plan(key, value, offer):
+    key = key.split()
+    value = replace_all(str(value)).split('\n\n')
+
+    attributes = value[0].split(';')
+    title = attributes[0]
+    hours = attributes[1] if len(attributes) > 1 else 'None'
+    order = key[2] if key[2] != 'модуль' else '0'
+    content = value[1] if len(value) > 1 else 'Описание отсутствует'
+
+    etree.SubElement(offer,
+                     'param',
+                     name=key[0],
+                     title=title,
+                     hours=str(hours),
+                     order=str(order)).text = str(content).replace('\n', '')
+
+
+# Тут небольшой костыль для корректной обработки перевода строки в таблице.
+def replace_all(text):
+    substring = ('\r\n', '\n\r', '\n\r\n', '\r\n\r', '\n\r\n\r', '\r\n\r\n')
+    for i in substring:
+        text = text.replace(i, '\n\n')
+    return text
 
 
 def create_education_file():
