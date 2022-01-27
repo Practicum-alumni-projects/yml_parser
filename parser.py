@@ -1,11 +1,11 @@
 import gspread
+import json
 
 from datetime import datetime
 from lxml import etree
-from test_list import res
+# from test_list import res
 
 CREDENTIALS_FILE = 'service_account_token.json'
-SPREADSHEET_ID = '1d8qVc3Ayt1O1eBU-ikcXrbLvCLHWawpd5WPniVajmRc'
 
 root = etree.Element('yml_catalog',
                      date=datetime.today().strftime('%Y-%m-%d %H:%M'))
@@ -20,16 +20,25 @@ params = ('Ежемесячная цена', 'Ближайшая дата', 'Ф�
           'Часы в неделю')
 
 
+def settings():
+    with open('settings.txt', 'r') as sf:
+        return json.loads(sf.read())
+
+
+config = settings()
+url = config['url']
+work_sh = int(config['worksheet']) - 1
+
+
 def parse_sheet():
     client = gspread.service_account(filename=CREDENTIALS_FILE)
-    sheet = client.open_by_key(SPREADSHEET_ID)
-    worksheet = sheet.get_worksheet(1)
+    sheet = client.open_by_url(url)
+    worksheet = sheet.get_worksheet(work_sh)
     return worksheet.get_all_records()
 
 
 def create_yml():
-    # res = parse_sheet()
-    # print(res)
+    res = parse_sheet()
     shop = etree.SubElement(root, 'shop')
     etree.SubElement(shop, 'name').text = res[0]['company']
     etree.SubElement(shop, 'url').text = res[0]['url_']
