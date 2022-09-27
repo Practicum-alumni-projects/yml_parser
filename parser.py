@@ -3,6 +3,7 @@ import json
 
 from datetime import datetime
 from lxml import etree
+
 # from test_list import res
 
 CREDENTIALS_FILE = 'service_account_token.json'
@@ -12,7 +13,7 @@ root = etree.Element('yml_catalog',
 
 tags = ('name', 'url', 'category Id', 'price', 'currency Id',
         'picture', 'description')
-params = ('Ежемесячная цена', 'Ближайшая дата', 'Формат обучения',
+params = ('Ссылка на контент курса', 'Ежемесячная цена', 'Ближайшая дата', 'Формат обучения',
           'Есть видеоуроки', 'Есть текстовые уроки',
           'Есть вебинары', 'Есть домашние работы', 'Есть тренажеры',
           'Есть сообщество', 'Сложность', 'Тип обучения',
@@ -21,7 +22,7 @@ params = ('Ежемесячная цена', 'Ближайшая дата', 'Ф�
 
 
 def settings():
-    with open('settings.txt', 'r') as sf:
+    with open('settings_test.txt', 'r') as sf:
         return json.loads(sf.read())
 
 
@@ -59,6 +60,8 @@ def create_yml():
                 unit_selection(key, value, offer)
             elif key.split()[0] == 'План' and value:
                 plan(key, value, offer)
+            elif key == 'Ссылка на контент курса' and value:
+                handle_urls_list(key, value, offer)
             elif key in params and value:
                 etree.SubElement(offer, 'param', name=key).text = str(value)
 
@@ -89,6 +92,17 @@ def plan(key, value, offer):
                      order=str(order)).text = str(content).replace('\n', '')
 
 
+def handle_urls_list(key, value, offer):
+    url_protocol = 'https://'
+    url_practicum_domain = 'practicum.yandex.ru'
+    urls_splitter = ','
+    urls_list = value.split(urls_splitter)
+    for record in urls_list:
+        record = record.strip()
+        if (record.startswith(url_protocol)) and url_practicum_domain in record:
+            etree.SubElement(offer, 'param', name=key).text = record
+
+
 # Тут небольшой костыль для корректной обработки перевода строки в таблице.
 def replace_all(text):
     substring = ('\r\n', '\n\r', '\n\r\n', '\r\n\r', '\n\r\n\r', '\r\n\r\n')
@@ -103,7 +117,7 @@ def create_education_file():
                             encoding='utf-8',
                             pretty_print=True,
                             xml_declaration=True).decode()
-    with open('education.yml', "w") as file:
+    with open('education.yml', "w", encoding='utf-8') as file:
         file.write(result)
 
 
