@@ -117,7 +117,7 @@ def create_education_file():
                             encoding='utf-8',
                             pretty_print=True,
                             xml_declaration=True).decode()
-    with open('education__.yml', "w", encoding='utf-8') as file:
+    with open('education.yml', "w", encoding='utf-8') as file:
         file.write(result)
 
 
