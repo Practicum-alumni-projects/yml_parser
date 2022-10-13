@@ -22,7 +22,7 @@ params = ('Ссылка на контент курса', 'Ежемесячная
 
 
 def settings():
-    with open('settings_test.txt', 'r') as sf:
+    with open('settings.txt', 'r') as sf:
         return json.loads(sf.read())
 
 
@@ -87,7 +87,7 @@ def plan(key, value, offer):
     etree.SubElement(offer,
                      'param',
                      name=key[0],
-                     title=title,
+                     unit=title,
                      hours=str(hours),
                      order=str(order)).text = str(content).replace('\n', '')
 
